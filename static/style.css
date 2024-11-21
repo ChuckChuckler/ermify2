@@ -1,0 +1,122 @@
+@keyframes fingerfloat {
+    from{bottom: 400px;}
+    to{bottom: 370px;}
+}
+
+@keyframes headfloat{
+    from{bottom: 0px}
+    to{bottom: 10px}
+}
+
+body{
+    background-color: #C2CFF2;
+}
+
+.titleContainer{
+    text-align: center;
+    margin: auto;
+}
+
+.finger{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    position: relative;
+    animation: fingerfloat 1s infinite alternate linear;
+    left: 300px;
+}
+
+.head{
+    position: relative;
+    animation: headfloat 1.5s infinite alternate linear;
+    height: 500px;
+    width: 400px;
+}
+
+.head:hover{
+    height: 520px;
+    width: 410px;
+}
+
+h1{
+    color: #4a5b8c;
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    text-decoration: underline 1px solid;
+}
+
+p{
+    line-height: 1px;
+    position: absolute;
+    left: 300px;
+    display: inline-block;
+    white-space:pre-wrap;
+}
+
+label{
+    color: #4a5b8c;
+}
+
+textarea{
+    width: 70%;
+}
+
+button{
+    width: 27%;
+    background-color: #EDEFF5;
+    border-color: #4a5b8c;
+    color:#4a5b8c;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: #c0c4cf;
+    width: 28%;
+}
+
+.qContainer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flexContainer{
+    display: flex;
+    justify-content: space-around;
+    background-color: #EDEFF5;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 85%;
+    margin: auto;
+    height: 480px;
+    border-radius: 20px;
+}
+
+.innerFlex1{
+    width: 49%;
+}
+
+.innerFlex2{
+    width: 49%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4a5b8c;
+    margin-top: 20px;
+    height: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #fcfdff;
+    border-radius: 20px;
+    overflow: scroll;
+}
+
+.innerFlex2:hover{
+    width: 50%;
+    height: 90%;
+}
+
+h3{
+    color: #4a5b8c;
+    font-family: "Courier Prime", monospace;
+    font-weight: 400;
+}
